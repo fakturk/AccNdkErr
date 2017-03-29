@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity
         tv_ndkAccZValue = (TextView) findViewById(R.id.tv_ndkAccZValue);
 
         errorData = new AccSensorErrorData();
-        errorData.print();
+//        errorData.print();
+        errorData.getError("htc", 12);
 
 
         // Example of a call to a native method
