@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="netlab.fakturk.accndkerr.MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintVertical_bias="0.032"/>
+
+    <TextView
+        android:id="@+id/tv_ndkAccXText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK ACC X Axis :"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintVertical_bias="0.078"/>
+
+    <TextView
+        android:id="@+id/tv_ndkAccXValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintVertical_bias="0.078"/>
+
+    <TextView
+        android:id="@+id/tv_ndkAccYText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK ACC Y Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintVertical_bias="0.113"/>
+
+    <TextView
+        android:id="@+id/tv_ndkAccYValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"/>
+
+    <TextView
+        android:id="@+id/tv_ndkAccZText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK ACC Z Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"/>
+
+    <TextView
+        android:id="@+id/tv_ndkAccZValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintVertical_bias="0.147"/>
+
+</android.support.constraint.ConstraintLayout>
