@@ -35,6 +35,8 @@ void Java_netlab_fakturk_accndkerr_MainActivity_sensorValue(JNIEnv* env, jobject
     int events, ident;
     ASensorManager* sensorManager;
     const ASensor* accSensor;
+    const ASensor* gyrSensor;
+    const ASensor* magSensor;
     void* sensor_data = malloc(1000);
 
 
@@ -52,6 +54,8 @@ void Java_netlab_fakturk_accndkerr_MainActivity_sensorValue(JNIEnv* env, jobject
     sensorManager = ASensorManager_getInstance();
 
     accSensor = ASensorManager_getDefaultSensor(sensorManager, ASENSOR_TYPE_ACCELEROMETER);
+    gyrSensor = ASensorManager_getDefaultSensor(sensorManager, ASENSOR_TYPE_GYROSCOPE);
+    magSensor = ASensorManager_getDefaultSensor(sensorManager, ASENSOR_TYPE_MAGNETIC_FIELD);
 
     int status = (*env).GetJavaVM(&jvm);
 
@@ -69,6 +73,8 @@ void Java_netlab_fakturk_accndkerr_MainActivity_sensorValue(JNIEnv* env, jobject
 
     sensorEventQueue = ASensorManager_createEventQueue(sensorManager, looper, 3, get_sensor_events, sensor_data);
     ASensorEventQueue_enableSensor(sensorEventQueue, accSensor);
+    ASensorEventQueue_enableSensor(sensorEventQueue, gyrSensor);
+    ASensorEventQueue_enableSensor(sensorEventQueue, magSensor);
     int a = ASensor_getMinDelay(accSensor);
     LOGI("min-delay: %d",a);
     ASensorEventQueue_setEventRate(sensorEventQueue, accSensor, 10000);
@@ -91,6 +97,8 @@ static int get_sensor_events(int fd, int events, void* data)
     (*jvm).AttachCurrentThread(&env,NULL);
     jclass clazz = (*env).GetObjectClass(g_object);
     jmethodID writeData = env->GetMethodID(clazz, "writeData","(JFFF)V");
+    jmethodID writeGyrData = env->GetMethodID(clazz, "writeGyrData","(JFFF)V");
+    jmethodID writeMagData = env->GetMethodID(clazz, "writeMagData","(JFFF)V");
 
 
 
@@ -100,6 +108,24 @@ static int get_sensor_events(int fd, int events, void* data)
             {
 //                sendData(event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
                 env->CallVoidMethod(g_object, writeData,event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
+//                LOGI(" %lld %f %f %f ", event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
+            }
+
+        }
+        if (event.type == ASENSOR_TYPE_GYROSCOPE) {
+            if (sensorPrint)
+            {
+//                sendData(event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
+                env->CallVoidMethod(g_object, writeGyrData,event.timestamp, event.vector.x, event.vector.y, event.vector.z);
+//                LOGI(" %lld %f %f %f ", event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
+            }
+
+        }
+        if (event.type == ASENSOR_TYPE_MAGNETIC_FIELD) {
+            if (sensorPrint)
+            {
+//                sendData(event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
+                env->CallVoidMethod(g_object, writeMagData,event.timestamp, event.magnetic.x, event.magnetic.y, event.magnetic.z);
 //                LOGI(" %lld %f %f %f ", event.timestamp, event.acceleration.x, event.acceleration.y, event.acceleration.z);
             }
 

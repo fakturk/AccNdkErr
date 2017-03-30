@@ -92,4 +92,300 @@
         app:layout_constraintHorizontal_bias="0.634"
         app:layout_constraintVertical_bias="0.147"/>
 
+    <TextView
+        android:id="@+id/tv_ndkGyrXText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK GYR Y Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226"/>
+
+    <TextView
+        android:id="@+id/tv_ndkGyrXValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"/>
+
+    <TextView
+        android:id="@+id/tv_ndkGyrYText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK GYR X Axis :"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"/>
+
+    <TextView
+        android:id="@+id/tv_ndkGyrYValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226"/>
+
+    <TextView
+        android:id="@+id/tv_ndkGyrZText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK GYR Z Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"/>
+
+    <TextView
+        android:id="@+id/tv_ndkGyrZValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"/>
+
+    <TextView
+        android:id="@+id/tv_ndkMagXText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK MAG X Axis :"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311"/>
+
+    <TextView
+        android:id="@+id/tv_ndkMagXValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311"/>
+
+    <TextView
+        android:id="@+id/tv_ndkMagYText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK MAG Y Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"/>
+
+    <TextView
+        android:id="@+id/tv_ndkMagYValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353"/>
+
+    <TextView
+        android:id="@+id/tv_ndkMagZText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDK MAG Z Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"/>
+
+    <TextView
+        android:id="@+id/tv_ndkMagZValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"/>
+
+    <TextView
+        android:id="@+id/tv_AngleXText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angle X Axis :"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441"/>
+
+    <TextView
+        android:id="@+id/tv_AngleYText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angle Y Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"/>
+
+    <TextView
+        android:id="@+id/tv_AngleYValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474"/>
+
+    <TextView
+        android:id="@+id/tv_AngleXValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"/>
+
+    <TextView
+        android:id="@+id/tv_AngleZValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"/>
+
+    <TextView
+        android:id="@+id/tv_AngleZText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angle X Axis :"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"/>
+
+    <TextView
+        android:id="@+id/tv_correctedXText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrected Acc X Axis :"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"/>
+
+    <TextView
+        android:id="@+id/tv_correctedXValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559"/>
+
+    <TextView
+        android:id="@+id/tv_correctedYText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrected Acc Y Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"/>
+
+    <TextView
+        android:id="@+id/tv_correctedYValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593"/>
+
+    <TextView
+        android:id="@+id/tv_correctedZText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrected Acc Z Axis :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637"/>
+
+    <TextView
+        android:id="@+id/tv_correctedZValue"
+        android:layout_width="97dp"
+        android:layout_height="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"/>
+
 </android.support.constraint.ConstraintLayout>

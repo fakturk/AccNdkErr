@@ -108,5 +108,31 @@ public class Gravity
 
     }
 
+    float angleBetweenGravity( float[] current)
+    {
+        float angle;
+        float[] initial=new float[]{0,0,GRAVITY_EARTH};
+        float dotProduct = (initial[2]*current[2]+initial[1]*current[1]);
+        float determinant = (initial[2]*current[2]-initial[1]*current[1]);
+        float initialMagnitude = (float) Math.sqrt(Math.pow(initial[2],2)+Math.pow(initial[1],2));
+        float currentMagnitude = (float) Math.sqrt(Math.pow(current[2],2)+Math.pow(current[1],2));
+
+        float sign = initial[2]*current[1]-initial[1]*current[2];
+//        System.out.println(dotProduct+", "+determinant+", "+initialMagnitude+", "+currentMagnitude);
+
+
+        angle = (float) Math.acos(dotProduct/(initialMagnitude*currentMagnitude));
+//        angle = (float) Math.atan2(determinant,dotProduct);
+        boolean isright=false;
+
+        if (sign>0)
+        {
+            angle*=-1;
+        }
+
+
+        return angle*=-1;
+    }
+
 
 }
