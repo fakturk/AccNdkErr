@@ -139,11 +139,12 @@ public class AccSensorErrorData
         for (int i = 0; i < 3; i++) {
             if (indice==35)
             {
-                error[i] = (float) ((htc[0][i + 1] - htc[35][i + 1]) * (difference / 10.0));
+                error[i] = (float) (((htc[0][i + 1] - htc[35][i + 1]) * (difference / 10.0))+htc[35][i + 1]);
             }
             else
             {
-                error[i] = (float) ((htc[indice + 1][i + 1] - htc[indice][i + 1]) * (difference / 10.0));
+                error[i] = (float) (((htc[indice + 1][i + 1] - htc[indice][i + 1]) * (difference / 10.0))+htc[indice][i + 1]);
+
             }
         }
 //        System.out.println("angle: "+angle+", indice: "+indice+", difference: "+difference+", error: "+error[0]+" "+error[1]+" "+error[2]);

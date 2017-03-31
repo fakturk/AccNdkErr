@@ -13,10 +13,12 @@ public class MainActivity extends AppCompatActivity
     TextView tv_ndkMagXValue,tv_ndkMagYValue,tv_ndkMagZValue;
     TextView tv_AngleXAxis,tv_AngleYAxis,tv_AngleZAxis;
     TextView tv_correctedX,tv_correctedY,tv_correctedZ;
+    TextView tv_velXValue,tv_velYValue,tv_velZValue;
+    TextView tv_distanceXValue,tv_distanceYValue,tv_distanceZValue;
     AccSensorErrorData errorData;
     Gravity g;
     Orientation orientation;
-    float[] gravity, startingEuler, mag, initialMag, euler, correctedAcc, error;
+    float[] gravity, startingEuler, mag, initialMag, euler, correctedAcc, error, velocity, distance;
     float[][] rotation;
     boolean isGravityInitilazed=false, isMagInitilazed=false;
     float angle = 0;
@@ -54,6 +56,15 @@ public class MainActivity extends AppCompatActivity
         tv_correctedY = (TextView) findViewById(R.id.tv_correctedYValue);
         tv_correctedZ = (TextView) findViewById(R.id.tv_correctedZValue);
 
+        tv_velXValue = (TextView) findViewById(R.id.tv_velXValue);
+        tv_velYValue = (TextView) findViewById(R.id.tv_velYValue);
+        tv_velZValue = (TextView) findViewById(R.id.tv_velZValue);
+
+        tv_distanceXValue = (TextView) findViewById(R.id.tv_distanceXValue);
+        tv_distanceYValue = (TextView) findViewById(R.id.tv_distanceYValue);
+        tv_distanceZValue = (TextView) findViewById(R.id.tv_distanceZValue);
+
+
         g = new Gravity();
         orientation = new Orientation();
         mag = new float[3];
@@ -64,6 +75,9 @@ public class MainActivity extends AppCompatActivity
         euler = new float[]{0,0,0};
         correctedAcc=new float[3];
         error=new  float[]{0,0,0};
+        velocity=new  float[]{0,0,0};
+        distance=new  float[]{0,0,0};
+
 
         errorData = new AccSensorErrorData();
 //        errorData.print();
@@ -124,6 +138,24 @@ public class MainActivity extends AppCompatActivity
         tv_correctedZ.setText(Float.toString(correctedAcc[2]));
 
 //        tv_AngleZAxis.setText(Float.toString(gravity[2]));
+        for (int i = 0; i < 3; i++)
+        {
+            velocity[i]+=correctedAcc[i]*0.01;
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            distance[i]+=velocity[i]*0.01;
+        }
+
+        tv_velXValue.setText(Float.toString(velocity[0]));
+        tv_velYValue.setText(Float.toString(velocity[1]));
+        tv_velZValue.setText(Float.toString(velocity[2]));
+
+        tv_distanceXValue.setText(Float.toString(distance[0]));
+        tv_distanceYValue.setText(Float.toString(distance[1]));
+        tv_distanceZValue.setText(Float.toString(distance[2]));
+
+
 
 
 
